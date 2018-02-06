@@ -23,7 +23,7 @@ print (myfloat)
 print ('''
 
 ''')
-# Display a "Copound" String Variable
+# Display a "Compound" String Variable
 raw_input ("Now would you like to see a string variable?")
 first_name = raw_input ("What is your first name?")
 last_name = raw_input ("What is your last name?")
