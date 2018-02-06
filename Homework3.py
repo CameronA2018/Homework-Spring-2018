@@ -33,10 +33,17 @@ print ('''
 
 ''')
 # Use the Last Variable to Create a Boolean True/False Statement
-my_string = (full_name)
-my_string.startswith('M' or 'm' or 'D' or 'd')
+my_string = (first_name)
+my_string.startswith('d')
+my_string.startswith('D')
+my_string.startswith('m')
+my_string.startswith('M')
+print (my_string.startswith('d'))
+print (my_string.startswith('D'))
+print (my_string.startswith('m'))
+print (my_string.startswith('M'))
+
 print ("If you typed any combination of Mr. Gold or David Gold, the statement below returns true. If you typed anything else, it returns false.")
-print (my_string.startswith('M' or 'm' or 'D' or 'd'))
 
 print ("End of Problem 1")
 print ('''
@@ -45,6 +52,7 @@ print ('''
 print ("Begin Problem 2")
 
 # Define Variables
+print ("This next sub-program is designed to take phrase D and phrase E, and combine them into phrase F.")
 D = ("Hello ")
 E = ("World!")
 
