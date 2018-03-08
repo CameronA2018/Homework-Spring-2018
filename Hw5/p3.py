@@ -11,7 +11,8 @@ if((len(words)% 2) != 0):
 	print ('This is ODD')
 	if("llama" in lowerStuff):
 		print (words)
-if(len(item1)%2 != 0):
+
+elif(len(item1)%2 != 0):
 	if(len(item2)%2 != 0):
 		if(len(item3)%2 != 0):
 			if(len(item4)%2 != 0):
