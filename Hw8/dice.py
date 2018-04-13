@@ -26,8 +26,10 @@ def gameWinner(score1,score2):
 		return "Player 1 Wins the Game"
 	elif(score2 > score1):
 		return "Player 2 Wins the Game"
+	elif(score1 == score2):
+		return "Tie Breaker"
 	else:
-		return "Nobody Won"
+		return "Somebody Cheated"
 
 gameRunning = 3
 
@@ -37,11 +39,11 @@ while(gameRunning >= 0):
 	rollWin = roundWinner(rollResult1,rollResult2)
 	if(rollResult1 > rollResult2):
 		score1 += 1
-	elif(rollResult2 > rollResult1):
+	if(rollResult2 > rollResult1):
 		score2 += 1
-	gameRunning -= 1
+	gameWin = gameWinner(score1,score2)
+	if(gameWin != "Tie Breaker"):
+		gameRunning -= 1
 	print(rollResult1,rollResult2,rollWin)
-
-gameWin = gameWinner(score1,score2)
 
 print(gameWin)
